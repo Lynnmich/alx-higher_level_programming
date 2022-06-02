@@ -1,28 +1,16 @@
-Tasks
-This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print whether the number stored in the variable number is positive or negative.
+0x02. Python - import & modules  
 
-This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable number.
+Tasks  
 
-Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3  
+Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.  
+Write a program that prints the number of and the list of its arguments.
 
-Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
-
-Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal (as in the following example)
-
-Write a program that prints numbers from 0 to 99.
-
-Write a program that prints all possible different combinations of two digits.
-
-Write a function that checks for lowercase character.
-
-Write a function that prints a string in uppercase followed by a new line.
-
-Write a function that prints the last digit of a number.
-
-Write a function that adds two integers and returns the result.
-
-Write a function that computes a to the power of b and return the value.
-
-Write a function that prints the numbers from 1 to 100 separated by a space.
-
-Write a function in C that inserts a number into a sorted singly linked l
+  
+Write a program that prints the result of the addition of all arguments  
+Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).  
+Write a program that imports the variable a from the file variable_load_5.py and prints its value.  
+Write a program that imports all functions from the file calculator_1.py and handles basic operations.  
+Write a program that prints #pythoniscool, followed by a new line, in the standard output  
+Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode  
+Write a program that prints the alphabet in uppercase, followed by a new line  
