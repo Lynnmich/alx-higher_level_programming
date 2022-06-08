@@ -1,6 +1,3 @@
+#!/usr/bin/python3
 def uniq_add(my_list=[]):
-lynn_list = []
- for n in my_list:
-        if n not in lynn_list:
-lynn_list.append(n)
-return (lynn_list)
+    return(sum(set(my_list)))
