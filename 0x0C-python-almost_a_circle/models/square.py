@@ -31,7 +31,7 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-    def update (self, *args, **kwargs)):
+    def update (self, *args, **kwargs):
         """Updates the Square
         Args:
             *args (ints): New values for attributes
@@ -84,4 +84,4 @@ class Square(Rectangle):
     def __str__(self):
         """Return the print() and str() representation of the Square"""
         return "[Square] ([]) {}/{}".format(self.id, self.x,
-                                               self.y, self.width)
+                                            self.y, self.width)
