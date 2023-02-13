@@ -35,7 +35,7 @@ class Rectangle(Base):
     def width (self, value):
         if type(value) != int:
             raise TypeError("width must be an integer")
-        if value is <= 0:
+        if value <= 0:
             raise ValueError("width must be > 0")
 
     @property
@@ -47,7 +47,7 @@ class Rectangle(Base):
     def height (self, value):
         if type(value) != int:
             raise TypeError("height must be an integer")
-        if value is <= 0:
+        if value <= 0:
             raise ValueError("height must be > 0")
 
     @property
@@ -59,7 +59,7 @@ class Rectangle(Base):
     def x (self, value):
         if type(value) != int:
             raise TypeError("x must be an integer")
-        if value is < 0:
+        if value < 0:
             raise ValueError("x must be >= 0")
 
     @property
@@ -71,7 +71,7 @@ class Rectangle(Base):
     def y (self, value):
         if type(value) != int:
             raise TypeError("y must be an integer")
-        if value is < 0:
+        if value < 0:
             raise ValueError("y must be >= 0")
 
     def area (self):
@@ -90,7 +90,7 @@ class Rectangle(Base):
             [print("#", end="") for w in range(self.width)]
             print("")
 
-    def update (self, *args, **kwargs)):
+    def update (self, *args, **kwargs):
         """Updates the Rectangle
         Args:
             *args (ints): New values for attributes
