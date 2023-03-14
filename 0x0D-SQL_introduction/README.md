@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MySQL
 - Structure Query Language(SQL) is a language used to interact with databases.
 A database is a collection of tables.
@@ -95,4 +94,3 @@ Tasks:
 18. Temperatures #0 - Import in hbtn_0c_0 database this table dump: download. Write a script that displays the average temperature (Fahrenheit) by city ordered by temperature. 
 19. Temperatures #1 - Write a script that displays the top 3 of cities temperature during July and August ordered by temperature (descending). 
 20. Temperatures #2 - Write a script that displays the max temperature of each state (ordered by State name).
->>>>>>> aeb4616bc24ceb00888bd2a924918e473dee2c04
