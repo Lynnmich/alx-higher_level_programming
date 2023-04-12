@@ -4,7 +4,7 @@ const i = parseInt(process.argv[2]);
 function factor (num) {
   if (num > 1) {
   return num * factor(num - 1);
-} else {
+  } else {
   return 1;
   }
 }
