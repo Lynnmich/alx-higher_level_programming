@@ -1,5 +1,5 @@
 #!/usr/bin/node
 const list = require('./100-data').list;
 console.log(list);
-const newList = list.map((num, element)=> num * element);
+const newList = list.map((num, element) => num * element);
 console.log(newList);
