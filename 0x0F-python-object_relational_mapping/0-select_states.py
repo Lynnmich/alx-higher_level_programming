@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-A Script that lists all states from the database hbtn_0e_0_usa
-"""
+""" A Script that lists all states from the database hbtn_0e_0_usa """
+
 import sys
 import MySQLdb
 
@@ -20,6 +19,3 @@ if __name__ == '__main__:
 
     for state in states:
         print(state)
-
-    cursor.close()
-    db.close()
