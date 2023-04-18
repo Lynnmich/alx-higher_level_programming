@@ -14,17 +14,17 @@ if __name__ == '__main__':
     
     Base.metadata.create_all(engine)
 
-    #creating a session
+    # creating a session
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    #create an object then add it
+    # create an object then add it
     new_state = State(name='Louisiana')
     session.add(new_state)
     session.commit()
 
-    #print output
+    # print output
     print(new_state.id)
 
-    #closing session
+    # closing session
     session.close()

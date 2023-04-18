@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" A script that prints all the states with letter 'a' from the database hbtn_0e_6_usa
+"""
+A script that prints all the states with
+letter 'a' from the database hbtn_0e_6_usa
 """
 
 import sys
@@ -15,15 +17,16 @@ if __name__ = '__main__':
 
     Base.metadata.create_all(engine)
 
-    #creating a session
+    # creating a session
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    #querying the states with letter 'a'
-    states = session.query(State).filter(State.name.like('%a%')).orderby(State.id).all()
+    # querying the states with letter 'a'
+    states = session.query(State).filter(State.name.like('%a%'))
+                    .orderby(State.id).all()
 
     for state in states:
         print("{}: {}".format(state.id, state.name))
 
-    #closing session
+    # closing session
     session.close()
