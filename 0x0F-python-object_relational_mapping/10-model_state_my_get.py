@@ -13,14 +13,13 @@ if __name__ == '__main__':
                            .format(sys.argv[1], sys.argv[2],
                                    sys.argv[3]), pool_pre_ping=True)
 
-    Base.metadata.create_all(engine)
-
     # creating a session
+    Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
 
     # querying the state object
-    state = session.query(State).filter_by(state_name).first()
+    state = session.query(State).filter_by(name=sys.argv[4]).first()
 
     if state is None:
         print("Not found")
