@@ -7,18 +7,17 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
-if __name__ = '__main__':
-    engine = create_engine('mysql: //{username}: {password}@localhost: 3306 / 
-                          {db_name}'.format(sys.argv[1], sys.argv[2], sys.argv[3]), 
-                          pool_pre_ping=True)
+if __name__ == '__main__':
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
+                           .format(sys.argv[1], sys.argv[2],
+                                   sys.argv[3]), pool_pre_ping=True)
 
+    # creating a session
     Base.metadata.create_all(engine)
-
-    #creating a session
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    #querying the first state object
+    # querying the first state object
     states = session.query(State).order_by(State.id.asc()).first()
 
     if states is None:
@@ -27,5 +26,5 @@ if __name__ = '__main__':
     else:
         print(f'{state.id}: {state.name}')
 
-    #closing session
+    # closing session
     session.close()
