@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     cities = cursor.fetchall()
     for row in cities:
-        print(" {}: ({}) {}".format(row[2], row[0], row[1]))
+        print(" {}: ({})".format(row[0], row[1]))
 
     cursor.close()
     db.close()
