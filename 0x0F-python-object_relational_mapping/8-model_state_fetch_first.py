@@ -18,13 +18,13 @@ if __name__ == '__main__':
     session = Session()
 
     # querying the first state object
-    states = session.query(State).order_by(State.id.asc()).first()
+    state = session.query(State).order_by(State.id.asc()).first()
 
-    if states is None:
+    if state is None:
         print('Nothing')
 
     else:
-        print("{}: {}".format(state.id, state.name))
+        print('{}: {}'.format(state.id, state.name))
 
     # closing session
     session.close()
