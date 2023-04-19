@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A script that lists all from the database hbtn_0e_4_usa
+A script that lists all cities from the database hbtn_0e_4_usa
 """
 import sys
 import MySQLdb
@@ -13,7 +13,8 @@ if __name__ == '__main__':
             port=3306)
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM cities ORDER BY id ASC")
+    cursor.execute("""SELECT cities.id, cities.name, state.name FROM cities,
+                   states WHERE cities.state_id = state.id;""")
 
     cities = cursor.fetchall()
 
