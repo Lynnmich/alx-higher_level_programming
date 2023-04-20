@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
     # querying the states with letter 'a'
     states = session.query(State).filter(State.name.like('%a%'))\
-                    .orderby(State.id).all()
+             .order_by(State.id).all()
 
     for state in states:
         print("{}: {}".format(state.id, state.name))
