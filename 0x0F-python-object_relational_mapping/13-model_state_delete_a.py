@@ -19,7 +19,7 @@ if __name__ == '__main__':
     session = Session()
 
     # retrieve states with letter 'a' in them
-    states_wth_a = session.query(State).filter(State.name.like('%a%')).all()
+    states_wth_a = session.query(State).filter(State.name.like('%a%'))
 
     # delete the states
     for state in states_wth_a:
