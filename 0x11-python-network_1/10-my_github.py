@@ -17,6 +17,8 @@ if __name__ == '__main__':
 
     try:
         data_json = response.json()
-        print(data_json["id"])
+        user_id = data_json.get("id")
+        if user_id is not None:
+            print(user_id)
     except ValueError:
         print("None")
