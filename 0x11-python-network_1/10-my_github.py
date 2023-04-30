@@ -8,7 +8,7 @@ and uses the GitHub API to display your id
 import requests
 import sys
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
 
@@ -16,8 +16,8 @@ if __name__ == '__main__':
     response = requests.get(url, auth=(username, password))
 
     try:
-        data_json = response.json()
-        user_id = data_json.get("id")
+        res = response.json()
+        user_id = res.get("id")
         if user_id is not None:
             print(user_id)
     except ValueError:
