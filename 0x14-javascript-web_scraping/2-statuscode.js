@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//A script that displays the status code of a GET request
+// A script that displays the status code of a GET request
 
 const request = require('request');
 
