@@ -1,16 +1,80 @@
-0x02. Python - import & modules  
 
-Tasks  
+# ALX Higher-Level Programming Project Overview
 
-Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3  
-Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.  
-Write a program that prints the number of and the list of its arguments.
+### The Higher-Level Programming repository included projects that focused on different programming languages and concepts. Here's an overview of the projects undertaken in Python, JavaScript, SQL, and the AirBnB clone:
 
-  
-Write a program that prints the result of the addition of all arguments  
-Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).  
-Write a program that imports the variable a from the file variable_load_5.py and prints its value.  
-Write a program that imports all functions from the file calculator_1.py and handles basic operations.  
-Write a program that prints #pythoniscool, followed by a new line, in the standard output  
-Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode  
-Write a program that prints the alphabet in uppercase, followed by a new line  
+#### Python
+
+***Python Basics***
+
+**Hello, World:** Introduced the basics of Python programming.
+
+**If/else, loops, functions:** Covered conditional statements, loops, and functions in Python.
+
+**Import & modules:** Explored importing modules in Python.
+
+**Data Structures:** Lists, Tuples: Covered lists and tuples in Python.
+
+**More Data Structures:** Set, Dictionary: Expanded on sets and dictionaries in Python.
+
+**Exceptions:** Focused on exception handling in Python.
+
+**Classes and Objects:** Introduced classes and objects in Python.
+
+**More Classes and Objects:** Advanced usage of classes and objects in Python.
+
+**Test-driven development:** Explored test-driven development (TDD) practices in Python.
+
+**Everything is object:** Delved into the concept of objects in Python.
+
+**Inheritance:** Covered inheritance and its implementation in Python.
+
+**Input/Output:** Explored input/output operations in Python.
+
+**Almost a circle:** Implemented a class hierarchy for geometric shapes in Python.
+
+***Python - Miscellaneous***
+
+**Object-relational mapping:** Explored object-relational mapping (ORM) using Python.
+
+**Network #0:** Covered basic network requests and responses in Python.
+
+**Network #1:** Expanded on network requests and responses in Python.
+
+***JavaScript***
+
+***JavaScript Basics***
+
+**Warm up:** Introduced basic JavaScript concepts and syntax.
+
+**Objects, Scopes and Closures:** Covered objects, scopes, and closures in JavaScript.
+
+**Web scraping:** Explored web scraping techniques using JavaScript.**Web jQuery:** Covered jQuery library usage for web development.
+
+
+***Databases***
+
+***SQL***
+
+**Introduction:** Introduced the basics of SQL (Structured Query Language).
+
+**More queries:** Expanded on SQL queries and advanced database operations.
+
+
+***AirBnB Clone***
+
+**AirBnB Clone - The console:** Implemented a command-line console for an AirBnB clone project.
+Web Development
+
+**AirBnB Clone - Web static:** Covered the creation of static web pages for the AirBnB clone project.
+
+**AirBnB Clone - MySQL:** Integrated MySQL database into the AirBnB clone project.
+
+**Deploy static:** Explored the deployment of static web pages for the AirBnB clone project.
+
+**AirBnB Clone - Web framework:** Covered the usage of web frameworks for the AirBnB clone project.
+
+**AirBnB Clone - RESTful API:** Implemented a RESTful API for the AirBnB clone project.
+
+**AirBnB Clone - Web dynamic:** Explored dynamic web page development for the AirBnB clone project.
+
